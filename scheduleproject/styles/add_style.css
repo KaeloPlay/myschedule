@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity 0.3s ease;
+}
+
+.main {
+    display: grid;
+    grid-auto-rows: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.upper {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    border-bottom: 2px solid black;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    display: grid;
+    grid-auto-rows: auto;
+    max-width: 80vw;
+    gap: 10px;
+    align-items: baseline;
+    margin: 12px;
+}
+
+#lableinput {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: border-bottom-color 0.2s ease;
+}
+
+#lableinput:focus {
+    outline: none;
+    border-bottom-color: black;
+}
+
+#saveinput {
+    font-size: 40px;
+    text-align: right;
+    margin: 0px 20px;
+    opacity: 0.8;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#contentinput {
+    text-align: left;
+    border: none;
+    margin: 0px 8px 0px 8px;
+    overflow: hidden;
+    resize: none;
+}
+
+#contentinput:focus {
+    border: none;
+    outline: none;
+}
+
+#dateinput {
+    font-size: 8px;
+    border: none;
+    color: gray;
+    margin: 0px 0px 0px 9px;
+    user-select: none;
+}
+
+#dateinput:focus {
+    outline: none;
+}
+
+.hidden {
+    opacity: 0;
+}
