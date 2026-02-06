@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 0, lable:"This is a schedule!", date:"0", content:"Try to make a new one!" },
     ]))};
 
+    scheduleList = JSON.parse(localStorage.getItem("schedules"));
+    
     console.log(scheduleList);
     if (scheduleList.length > 0) {
         cloneSche();
@@ -84,4 +86,5 @@ function page(type) {
     } else {
         document.querySelector("body").classList.add("hidden");
     }
+
 }
